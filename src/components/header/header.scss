@@ -1,0 +1,122 @@
+header {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: whitesmoke;
+
+  .avatar {
+    position: absolute;
+    bottom: -150px;
+    left: 50px;
+    height: 300px;
+    width: 300px;
+    border: 5px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 5px lightgray;
+    background-image: url("./avatar.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .info {
+    display: flex;
+    width: 100%;
+
+    span {
+      font-weight: 100;
+      font-size: 4rem;
+      margin: 0;
+      width: 30%;
+      min-width: 670px;
+      text-transform: uppercase;
+      text-align: end;
+      padding: 1rem 2rem;
+      padding-left: 350px;
+      text-shadow: 0 0 1px black;
+    }
+
+    ul {
+      flex-grow: 1;
+      margin: 0;
+      margin-top: 0.7rem;
+      padding: 1rem 2rem;
+      list-style: none;
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .avatar {
+      height: 200px;
+      width: 200px;
+      bottom: -100px;
+      left: 40px;
+    }
+
+    .info {
+      span {
+        font-size: 3rem;
+        min-width: 500px;
+        padding-left: 150px;
+      }
+
+      ul {
+        font-size: 0.85rem;
+        margin-top: 0.5rem;
+        padding: 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    .avatar {
+      height: 150px;
+      width: 150px;
+      bottom: -75px;
+      left: 30px;
+    }
+
+    .info {
+      span {
+        font-size: 2rem;
+        min-width: 300px;
+        padding: 1rem 0;
+        padding-left: 100px;
+      }
+
+      ul {
+        font-size: 0.7rem;
+        margin-top: 0.2rem;
+        padding: 1rem;
+      }
+    }
+  }
+
+
+  @media (max-width: 500px) {
+    .avatar {
+      height: 100px;
+      width: 100px;
+      bottom: -50px;
+      left: 10px;
+    }
+
+    .info {
+      span {
+        font-size: 1.5rem;
+        min-width: 190px;
+        padding: 1rem 0;
+      }
+
+      ul {
+        font-size: .75rem;
+        margin-top: 0.2rem;
+        padding: 1rem;
+      }
+    }
+  }
+
+
+}
